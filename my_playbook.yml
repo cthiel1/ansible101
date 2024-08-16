@@ -1,0 +1,11 @@
+- name: Start playing with Ansible
+  hosts: localhost
+  tasks:
+    - name: Say hello
+      debug:
+        msg: "Hello world!"
+
+    - name: File hello
+      copy:
+        content: "hello"
+        dest: hellofile.txt
